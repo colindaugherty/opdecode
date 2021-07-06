@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>op:Decode{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ static_url('index.css') }}">
+    {% endblock %}
+</head>
+<body>
+    {% block mainmenu %}
+    {% endblock %}
+    <div id="content">{% block content %}{% endblock %}</div>
+    {% block footer %}
+    <script src="{{ static_url('script/index.js') }}"></script>
+    {% endblock %}
+</body>
+</html>

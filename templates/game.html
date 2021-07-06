@@ -1,0 +1,16 @@
+{% set selected = 'game' %}
+{% extends "_base.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <main>
+    <div class="gameSpace">
+      
+    </div>
+  </main>
+{% endblock %}
+{% block footer %}
+  {{ super() }}
+  <script src="{{ static_url('script/game.js') }}"></script>
+{% endblock %}
